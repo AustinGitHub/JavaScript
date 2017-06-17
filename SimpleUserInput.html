@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<style>
+.align {
+	margin-top: 200px;
+}
+</style>
+
+Name: <input type="text" id="userInput" class="align"> 
+
+<br />
+<br />
+<br />
+
+
+<font color="black">
+
+<button onclick="names()"> Submit </button>
+<br />
+Your Name is <div style="display:inline-block;" id="name"> </div>
+
+<script> 
+function names(){
+	input = document.getElementById("userInput").value;
+	document.getElementById("name").innerHTML = input;
+}
+
+</script>
+<br />
+
+
+
+
+
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+
+
+
+<style> 
+.size {
+	height: 100px;
+	width: 200px;
+}
+</style>
+<select id="fruit" class="size" onclick="fruity()">
+<option> - </option>
+<option> Banana </option>
+<option> Apples </option>
+<option> Carrots </option>
+</select>
+
+
+<h1> Your favorite fruit is <div style="display: inline-block;" id="fruits"></div>
+
+
+
+<script> 
+function fruity() {
+	var input = document.getElementById("fruit").value;
+	document.getElementById("fruits").innerHTML = input;
+	if(input == "-"){
+			document.getElementById("fruits").innerHTML = "null";
+	}
+
+}
+
+
+
+</script>
+
+</html>
